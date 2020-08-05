@@ -6,8 +6,7 @@ pip install --upgrade twine
 python setup.py sdist bdist_wheel
 
 # To push (username: __token__ password: use the token value)
-python -m twine upload dist/*
+twine upload --skip-existing dist/*
 
 # If you get the error that the package already exists:
 #    change your version in setup.py
-#    remove previous build, dist and *.egg-info directories and re-build and re-upload
