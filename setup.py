@@ -11,7 +11,7 @@ setuptools.setup(
     description="package description",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="github repo url",
+    url="git repo url (github, gitlab...)",
     packages=setuptools.find_packages(),
     install_requires=[
         'reportlab',
