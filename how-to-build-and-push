@@ -1,4 +1,4 @@
-# First time only
+# First time only on virtual environment
 pip install --upgrade setuptools wheel
 pip install --upgrade twine
 
