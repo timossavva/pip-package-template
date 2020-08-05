@@ -5,8 +5,9 @@ pip install --upgrade twine
 # To build
 python setup.py sdist bdist_wheel
 
-# To push
+# To push (username: __token__ password: use the token value)
 python -m twine upload dist/*
-# You will be prompted for a username and password.
-# For the username, use __token__
-# For the password, use the token value, including the pypi- prefix.
+
+# If you get the error that the package already exists:
+#    change your version in setup.py
+#    remove previous build, dist and *.egg-info directories and re-build and re-upload
